@@ -1,0 +1,29 @@
+cxx_binary(
+  name = 'tests',
+  srcs = [
+    'tests.c',
+  ],
+  deps = [
+    '//:pdjson',
+  ],
+)
+
+cxx_binary(
+  name = 'pretty',
+  srcs = [
+    'pretty.c',
+  ],
+  deps = [
+    '//:pdjson',
+  ],
+)
+
+cxx_binary(
+  name = 'stream',
+  srcs = [
+    'stream.c',
+  ],
+  deps = [
+    '//:pdjson',
+  ],
+)
